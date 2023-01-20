@@ -1,0 +1,218 @@
+<html>
+<head>
+    <title>bmth concert</title>
+    <link rel="stylesheet" href="w3.css">
+</head>
+<body>
+  <!-- **NOTE!**
+      *pastiin rapih, div yg mana ditutup sm yg mana dan dibuat sejajar jadi ga pusing.
+      *terus dibagi perbagian pake div lagi contohnya udh ada di comment di bawah.
+      
+      *kalo ada class yg sama di satu baigan, pake satu aja di div paling atas/paling luar. contoh
+      <div>
+        <div class="w3-container"></div>
+        <div class="w3-container"></div>
+        <div class="w3-container"></div>
+      </div>
+
+      *diubah jadi
+      <div class="w3-container">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+    -->
+    <div class="w3-top"> <!-- bagian atas/nav bar-->
+        <div class="w3-bar w3-black w3-card">
+          <a href="#home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+          <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+          <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+              <a href="#about" class="w3-bar-item w3-button">About Me</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- navbar -->
+    <div id="nav" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+      <a href="#home" class="w3-bar-item w3-button w3-padding-large" onclick="openpage(home)">HOME</a>
+      <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="openpage(tour)">TOUR</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="openpage(contact)">CONTACT</a>
+      <a href="#merchandise" class="w3-bar-item w3-button w3-padding-large" onclick="openpage(about)">ABOUT</a>
+    </div>
+    <div id="home" class="w3-center"> <!--bagian kesatu(carousel)-->
+        <div class="mySlides ">
+            <img src="BMTH IN LOS ANGELES.png" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <img src="BMTH IN NEW YORK.png" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="BMTH IN CHICAGO.png" style="width:100%">
+        </div>
+      <br>
+    </div>
+
+    <div class="w3-container"> <!-- bagian kedua (isi)-->
+        <h2 class="w3-wide">Bring Me The Horizon</h2>
+        <p class="w3-opacity"><i>Genre: Metalcore & DeathCore</i></p>
+        <p class=" w3-justify">Bring Me the Horizon's founding members came from diverse musical backgrounds within metal and rock. 
+          Matt Nicholls and Oliver Sykes had a common interest in American metalcore such as Norma Jean and 
+          Skycamefalling, and used to attend local hardcore punk shows. They later met Lee Malia, who spoke 
+          with them about thrash metal and melodic death metal bands like Metallica and At the Gates; Malia had 
+          also been part of a Metallica tribute band before meeting the pair. Bring Me the Horizon officially 
+          formed in March 2004, when the members were aged 15 to 17. Curtis Ward, who also lived in the Rotherham area, 
+          joined Sykes, Malia and Nicholls on drums. Bassist Matt Kean, who was in other local bands, completed the line-up. 
+          Their name is paraphrased from a line of dialogue spoken by Captain Jack Sparrow in the 2003 film Pirates of the 
+          Caribbean: The Curse of the Black Pearl, where Captain Jack Sparrow says: "Now, bring me that horizon".</p>
+    </div>
+      
+    <div class="w3-row"> <!-- bagian ketiga (content)-->
+      <div class="w3-third w3-center">
+        <p>Oliver Sykes</p>
+        <img src="Oliver Sykes __ Bring Me The Horizon.jpeg" class="w3-round w3-margin-bottom w3-animate-left" alt="Oliver Sykes" style="width:60%">
+      </div>
+      <div class="w3-third w3-center">
+        <p>Jordan Fish</p>
+        <img src="Jordan Fish.jpeg" class="w3-round w3-margin-bottom w3-animate-zoom" alt="Jordan Fish" style="width:48%">
+      </div>
+      <div class="w3-third w3-center">
+        <p>Lee Malia</p>
+        <img src="Backstage Portraits With Bring Me The Horizon - Adam Elmakias.jpeg" class="w3-round w3-margin-bottom w3-animate-right" alt="Lee Malia" style="width:75%">
+      </div>
+    </div>
+
+    <!-- The Tour -->
+  <div class="w3-black" id="tour" style="display:block">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">TOUR DATES</h2>
+      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">February <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">March <span class="w3-badge w3-right w3-margin-right">3</span></li>
+        <li class="w3-padding">April <span class="w3-badge w3-right w3-margin-right">5</span></li>
+      </ul>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom w3-animate-zoom">
+          <img src="New York.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>New York</b></p>
+            <p class="w3-opacity">Wed 22 Feb 2023</p>
+            <p>Let's Rock New York! Im Waiting For You There.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById().style.display='block'">Sold Out</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom w3-animate-zoom">
+          <img src="Paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Paris</b></p>
+            <p class="w3-opacity">Sat 25 March 2023</p>
+            <p>Let's Destroy Paris! Im Waiting For You There.</p>
+            <button class="w3-button w3-black w3-margin-bottom w3-animate-zoom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom w3-animate-zoom">
+          <img src="San Francisco 01.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>San Francisco</b></p>
+            <p class="w3-opacity">Sun 23 April 2023</p>
+            <p>Let's Make San Francisco Fall!</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-black w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $160 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-black w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-black w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px, display:none" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Sheffield, ENG<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +44 7031<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: bmthofficial@gmail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Me -->
+  <div class="w3-black" id="about" style="display:block">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">ABOUT ME</h2>
+      <center>
+          <img src="fy.jpg" class="w3-round" alt="Fayadh" style="width:60%">
+          <p><h2>Fayadh Muhammad</h2></p>
+          <p><h2>10122090</h2></p>
+      </center>
+
+  <script>
+        function openpage(namepage) {
+         var i;
+         var x = document.getElementsByClassName("page");
+         for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+         }
+         document.getElementById(namepage).style.display = "block";
+        }
+  </script>
+  <script>
+    var myIndex = 0;
+    carousel();
+    
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
+
+</body>
+</html>
